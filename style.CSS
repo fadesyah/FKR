@@ -1,0 +1,513 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ================= DASAR ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f5;
+    color: #222;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px 8%;
+
+    background: rgba(247, 247, 245, 0.9);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 15px; 
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: red;
+}
+
+
+/* ================= SEMUA SECTION ================= */
+
+section {
+    min-height: 100vh;
+
+    padding: 120px 8% 80px;
+}
+
+
+/* ================= HOME ================= */
+
+.hero {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+.hero-text {
+    max-width: 650px;
+}
+
+
+.subjudul {
+    color: darkred;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 70px;
+
+    line-height: 1.05;
+}
+
+
+.hero h1 span {
+    color: darkred;
+}
+
+
+.hero-text > p:not(.subjudul) {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin: 25px 0;
+
+    max-width: 520px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #222;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: darkred;
+}
+
+
+/* ================= BULAT FKR ================= */
+
+.hero-box {
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.circle {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    background: grey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.circle img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.hero-box p {
+    margin-top: 20px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= TENTANG ================= */
+
+.tentang {
+    background: white;
+}
+
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+
+.section-title p {
+    color: darkred;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+}
+
+
+.section-title h2 {
+    font-size: 55px;
+
+    margin-top: 10px;
+}
+
+
+.section-title h2 span {
+    color: darkred;
+}
+
+
+.about-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+.about-text,
+.about-box {
+    padding: 40px;
+
+    background: #f7f7f5;
+
+    border-radius: 20px;
+}
+
+
+.about-text h3,
+.about-box h3 {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.about-text p {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.about-box ul {
+    padding-left: 20px;
+
+    color: #666;
+
+    line-height: 2.2;
+}
+
+
+/* ================= KEGIATAN ================= */
+
+.kegiatan {
+    background: #f7f7f5;
+}
+
+
+.activity-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.activity-card {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+
+.activity-card:hover {
+    transform: translateY(-7px);
+}
+
+
+.number {
+    color: darkred;
+
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+
+.activity-card h3 {
+    font-size: 25px;
+
+    margin: 15px 0;
+}
+
+
+.activity-card p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+
+/* ================= KONTAK ================= */
+
+.kontak {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.kontak h2 {
+    font-size: 55px;
+
+    margin: 15px 0;
+}
+
+
+.kontak h2 span {
+    color: red;
+}
+
+
+.kontak > p:not(.subjudul) {
+    color: #bbb;
+
+    margin-bottom: 35px;
+}
+
+
+.contact {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.contact a {
+    text-decoration: none;
+
+    color: white;
+
+    border: 1px solid #555;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+
+.contact a:hover {
+    background: red;
+
+    border-color: red;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111;
+
+    color: #888;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 12px;
+}
+
+
+/* ================= HP ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 20px;
+    }
+
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .menu {
+        gap: 15px;
+    }
+
+
+    .menu a {
+        font-size: 12px;
+    }
+
+
+    section {
+        padding: 120px 20px 70px;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .hero-text > p:not(.subjudul) {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-box {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    .circle {
+        width: 130px;
+        height: 130px;
+
+        font-size: 35px;
+    }
+
+
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .activity-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .kontak h2 {
+        font-size: 40px;
+    }
+
+
+    .contact {
+        flex-direction: column;
+
+        width: 200px;
+    }
+
+}
+
