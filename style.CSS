@@ -17,7 +17,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, #ff0000, #800000, #000000);
+    background: #f7f7f5;
     color: #222;
 }
 
@@ -58,6 +58,7 @@ nav {
 .menu {
     display: flex;
     gap: 30px;
+    background: linear-gradient(90deg, #F7F7F5, #FF6B6B);
 }
 
 
