@@ -33,7 +33,7 @@ header {
 
     padding: 20px 8%;
 
-    background: #F7F7F5;
+    background: #F5F5F5;
 
     backdrop-filter: blur(10px);
 
@@ -58,7 +58,7 @@ nav {
 .menu {
     display: flex;
     gap: 30px;
-    background:#F7F7F5;
+    background:#F5F5F5;
 }
 
 
